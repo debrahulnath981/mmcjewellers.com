@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Maa Mangal Chandi Jewellers</title>
+  <link rel="icon" href="images/logo.jpg" />
+  <style>
+  
+    :root{--gold:#a2d84a;--deep:#4923d5;--muted:#f3f3f5}
+    *{box-sizing:border-box}
+    body{font-family:Inter, Arial, sans-serif; margin:0; color:#111; background:linear-gradient(180deg,#f0eff1 0%, #f8f6f6 100%)}
+    header{background:var(--deep); color:rgb(17, 7, 7); padding:18px 24px; display:flex; align-items:center; gap:18px}
+
+    .brand{display:flex; align-items:center; gap:12px}
+    .brand img{height:64px; width:64px; object-fit:contain;  border-radius:8px;  //*background:rgb(53, 56, 226);*// padding:6px}
+    .brand h1{font-size:20px;margin:0; letter-spacing:2px}
+    .brand p{margin:0;font-size:12px;opacity:0.9}
+    nav{margin-left:auto}
+    nav a{color:rgba(242, 242, 242, 0.9); text-decoration:none; margin-left:18px; font-weight:600}
+
+    .hero{display:grid; grid-template-columns:1fr 480px; gap:28px; align-items:center; padding:48px 6%;}
+    .hero .intro{max-width:720px}
+    .eyebrow{display:inline-block;background:var(--gold); color:var(--deep); padding:6px 10px; border-radius:999px; font-weight:700; letter-spacing:1px}
+    h2{font-size:44px;margin:16px 0 12px}
+    p.lead{color:#333; font-size:16px; line-height:1.6}
+    .cta{margin-top:18px}
+    .btn{background:var(--deep); color:rgb(245, 242, 242); border:none; padding:12px 18px; border-radius:8px; font-weight:700; cursor:pointer}
+    .btn.ghost{background:transparent; color:var(--deep); border:2px solid var(--deep); margin-left:12px}
+
+    .hero-img{border-radius:20px; overflow:hidden; box-shadow:0 12px 40px rgba(2,8,23,0.35); border:6px solid rgba(216,178,74,0.06); display:flex; justify-content:center; align-items:center}
+    .hero-img img{width:100%; height:100%; object-fit:cover}
+
+    section{padding:36px 6%}
+    .cards{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px}
+    .card{background:white;border-radius:12px;padding:18px; box-shadow:0 6px 20px rgba(3,10,30,0.06)}
+    .card h3{margin:4px 0 8px}
+
+    .gallery{display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:12px}
+    .gallery img{width:100%; height:160px; object-fit:cover; border-radius:10px; border:4px solid white; box-shadow:0 8px 18px rgba(6,10,20,0.12)}
+
+    .certs{display:flex; gap:14px; align-items:center; flex-wrap:wrap}
+    .certs img{height:64px; width:auto; border-radius:8px; background:white; padding:6px}
+
+    .contact{display:grid; grid-template-columns:1fr 340px; gap:20px}
+    form{background:white; padding:16px; border-radius:12px; box-shadow:0 8px 24px rgba(6,10,20,0.08)}
+    label{display:block;margin:10px 0 6px;font-weight:600}
+    input,textarea{width:100%; padding:10px; border-radius:8px; border:1px solid #e5e7eb}
+    .map{border-radius:12px; overflow:hidden}
+
+    footer{background:#0f0d27; color:#cfcbd9; padding:18px 6%; display:flex; justify-content:space-between; align-items:center}
+    footer a{color:var(--gold); text-decoration:none}
+
+    @media (max-width:900px){.hero{grid-template-columns:1fr; padding:28px 4%}.hero-img{height:320px}}  
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="images/logo.png" alt="Maa Mangal Chandi logo"class="logo">
+      <div>
+        <h2>MAA MANGAL CHANDI JEWELLARS</h2>
+        <p>A Authentic Jewellery Shop</p>
+      </div>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#collections">Collections</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="hero">
+      <div class="intro">
+        <span class="eyebrow">Traditional • Trusted • Timeless</span>
+        <h2>Fine temple & bridal jewellery handcrafted for special moments.</h2>
+        <p class="lead">Maa Mangal Chandi Jewellars offers authentic designs — from classic temple sets and bangles to modern wedding collections. We focus on purity, hallmark certified pieces and customer trust.</p>
+        <div class="cta">
+          <button class="btn">Browse Collections</button>
+          <button class="btn ghost">Call: +91 8116-2689-96</button>
+        </div>
+
+        <div style="margin-top:18px; display:flex; gap:12px; align-items:center">
+          <div style="background:var(--gold); color:var(--deep); padding:8px 10px; border-radius:8px; font-weight:700">Shop Owner: Arun Debnath</div>
+          <div style="color:#666; font-size:14px">Gosairhat Bandar, Sitalkuchi,736172</div>
+        </div>
+      </div>
+
+      <div class="hero-img">
+        <!-- Main image requested by user - placed prominently -->
+        <img src="images/bannar.png" alt="Shop card / hero photo">
+      </div>
+    </section>
+
+    <section id="about">
+      <div style="display:flex; gap:20px; align-items:flex-start; flex-wrap:wrap">
+        <div style="flex:1; min-width:280px">
+          <h3>About Us</h3>
+          <p>We are a family-run jewellery store serving the Sitalkuchi area with a reputation for honest trade and quality. Our pieces include bridal sets, bangles, temple jewellery and custom orders. Every gold item is BIS-hallmarked and checked for purity.</p>
+        </div>
+        <div style="width:320px" class="card">
+          <h4>Why choose us</h4>
+          <ul>
+            <li>Hallmark certified gold</li>
+            <li>Custom design & remodelling</li>
+            <li>Trusted local service since inception</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="collections">
+      <h3>Collections</h3>
+      <div class="cards" style="margin-top:12px">
+        <div class="card">
+          <h3>Bridal Sets</h3>
+          <p>Heirloom temple and Kundan-inspired bridal sets crafted to make your wedding unforgettable.</p>
+        </div>
+        <div class="card">
+          <h3>Bangles & Kada</h3>
+          <p>Classic and contemporary bangles — from simple everyday wear to heavy bridal kadas.</p>
+        </div>
+        <div class="card">
+          <h3>Gold Coins & Bars</h3>
+          <p>Investment grade gold — BIS certified bars and coins available.</p>
+        </div>
+        <div class="card">
+          <h3>Custom Design</h3>
+          <p>Bring a picture or idea and we will craft a custom piece for you.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h3>Gallery</h3>
+      <p style="color:#555">A small selection of items and shop photos.</p>
+      <div class="gallery" style="margin-top:12px">
+        <img src="images/mmc.jpg" alt="shop interior">
+        <img src="images/shope image.jpg" alt="shop display">
+        <img src="images/kdm.jpeg" alt="gold bars / hallmark display">
+        <img src="images/bis.webp" alt="certification logo">
+        <img src="images/kdm_gold.jpg" alt="gold rings">
+        <img src="images/kada.jpg" alt="kada bangles">
+      </div>
+    </section>
+
+    <section id="certifications">
+      <h3>Certifications</h3>
+      <div class="certs" style="margin-top:10px">
+        <img src="images/hl.jpg" alt="BIS logo">
+        <div>
+          <strong>BIS Hallmarking</strong>
+          <p style="margin:6px 0 0;color:#666">All gold jewellery sold is BIS certified where required.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h3>Contact</h3>
+      <div class="contact">
+        <form onsubmit="event.preventDefault(); alert('Thanks — we will contact you soon!');">
+          <label for="name">Name</label>
+          <input id="name" placeholder="Your name" required>
+          <label for="phone">Phone</label>
+          <input id="phone" placeholder="Mobile number" required>
+          <label for="message">Message</label>
+          <textarea id="message" rows="4" placeholder="What are you looking for?"></textarea>
+          <div style="margin-top:12px; display:flex; gap:10px">
+            <button class="btn" type="submit">Send Message</button>
+            <a class="btn ghost" href="tel:+918116268996">Call Now</a>
+          </div>
+            <!-- YouTube Demo Video Section -->
+    <section id="video-demo">
+      <h3>Demo Video</h3>
+      <p style="color:#555">Watch our jewellery demo / shop showcase video.</p>
+      <div style="margin-top:10px; display:flex; justify-content:center;">
+        <iframe width="100%" height="150" style="max-width:700px; border-radius:12px; border:none; box-shadow:0 8px 25px rgba(0,0,0,0.15);" src="https://www.youtube.com/embed/9Nm9tU93BZo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+        </form>
+      
+    </section>
+
+        <div>
+          <div class="card">
+            <h4>Visit Us</h4>
+            <p><strong>Prop: Arun Debnath</strong><br>Gosairhat Bandar, Sitalkuchi<br>Phone: +91 8116-2689-96</p>
+            <p style="margin-top:6px"><em>Open: 10:00 AM — 8:00 PM</em></p>
+          </div>
+
+        <div style="margin-top:12px" class="map">
+<iframe
+src="https://www.google.com/maps?q=Gosairhat%20Bandar%2C%20Sitalkuchi&output=embed"
+width="100%"
+height="320"
+style="border:0; border-radius:12px;"
+allowfullscreen=""
+loading="lazy"
+referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+</div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div>© <strong>Maa Mangal Chandi</strong> — All rights reserved</div>
+    <div>Made with ♥ — <a href="#contact">Contact Us</a></div>
+  </footer>
+
+</body>
+</html>
